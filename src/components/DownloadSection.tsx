@@ -57,7 +57,7 @@ export const DownloadSection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6"
+                        className="text-4xl  md:text-5xl font-bold text-white tracking-tight mb-6"
                     >
                         Télécharger <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-[#00c896]">Airgap</span>
                     </motion.h2>
@@ -126,7 +126,7 @@ export const DownloadSection = () => {
 
                                     <div className="flex items-center gap-3 px-8 py-4 bg-[#00c896] text-black font-bold rounded-2xl group-hover:bg-[#00e0a8] transition-all">
                                         <Download className="w-5 h-5" />
-                                        Télécharger l'installeur
+                                        <span className="max-sm:text-sm">Télécharger l'installeur</span>
                                     </div>
                                 </a>
                             </motion.div>
