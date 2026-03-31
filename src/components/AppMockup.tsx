@@ -77,7 +77,7 @@ const BOT_QUESTIONS = [
 const BOT_REPLIES: Record<string, Message> = {
     "features": {
         id: "rep-feat",
-        text: "La v0.01 inclut : Chat P2P décentralisé, transfert de fichiers ultra-rapide en local, chiffrement de bout en bout, et une découverte automatique des pairs sur le réseau sans serveur.",
+        text: "La v0.01 inclut : Chat P2P décentralisé, Communication ultra-rapide en local, chiffrement de bout en bout, et une découverte automatique des pairs sur le réseau sans serveur.",
         sender: "them",
         timestamp: "Maintenant"
     },
