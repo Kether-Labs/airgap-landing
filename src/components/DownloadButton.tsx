@@ -11,7 +11,7 @@ function cn(...inputs: (string | undefined | null | false)[]) {
     return twMerge(clsx(inputs));
 }
 
-const BASE = "https://github.com/TON_USERNAME/airgap/releases/download/v0.1.0-beta";
+const BASE = "https://github.com/Kether-Labs/airgap/releases/download";
 
 type PlatformFormat = "windows" | "linux_appimage" | "linux_deb" | "linux_rpm";
 
@@ -29,7 +29,7 @@ const platforms: Record<PlatformFormat, PlatformInfo> = {
     windows: {
         id: "windows",
         label: "Télécharger pour Windows",
-        url: `${BASE}/airgap_0.1.0_x64-setup.exe`,
+        url: `${BASE}/v0.1.0-beta/airgap_0.1.0_x64-setup.exe`,
         icon: <Image src="/windows.svg" alt="Windows" width={32} height={32} />,
         sub: "Windows 10/11 — 64 bits",
         primaryBg: "bg-[#00c896]",
@@ -38,7 +38,7 @@ const platforms: Record<PlatformFormat, PlatformInfo> = {
     linux_appimage: {
         id: "linux_appimage",
         label: "Télécharger pour Linux",
-        url: `${BASE}/airgap_0.1.0_amd64.AppImage`,
+        url: `${BASE}/v0.1.0-beta/airgap_0.1.0_amd64.AppImage`,
         icon: <Image src="/linux.svg" alt="Linux" width={32} height={32} />,
         sub: "AppImage — Universel",
         primaryBg: "bg-purple-500",
@@ -47,14 +47,14 @@ const platforms: Record<PlatformFormat, PlatformInfo> = {
     linux_deb: {
         id: "linux_deb",
         label: "Télécharger .deb",
-        url: `${BASE}/airgap_0.1.0_amd64.deb`,
+        url: `${BASE}/v0.1.0-beta/airgap_0.1.0_amd64.deb`,
         icon: <Image src="/debian.svg" alt="Linux" width={32} height={32} />,
         sub: "Ubuntu / Debian",
     },
     linux_rpm: {
         id: "linux_rpm",
         label: "Télécharger .rpm",
-        url: `${BASE}/airgap_0.1.0_amd64.rpm`,
+        url: `${BASE}/v0.1.0-beta/airgap-0.1.0-1.x86_64.rpm`,
         icon: <Image src="/redhat.svg" alt="Linux" width={32} height={32} />,
         sub: "Fedora / RedHat",
     },

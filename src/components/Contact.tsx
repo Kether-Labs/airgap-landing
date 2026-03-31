@@ -3,10 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MessageCircle, ArrowRight, Share2, Sparkles, Phone, Shield, Zap } from "lucide-react";
+import Image from "next/image";
 
 export const Contact = () => {
     return (
-        <section id="contact" className="py-24 relative overflow-hidden bg-[#020202]">
+        <section id="contact" className=" relative overflow-hidden bg-[#020202]">
             {/* Background ambient glow */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-[#00c896]/5 blur-[150px] rounded-full pointer-events-none" />
 
@@ -46,17 +47,19 @@ export const Contact = () => {
                                 href="https://github.com/Kether-Labs"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-5 bg-white text-black font-bold rounded-2xl hover:bg-zinc-200 transition-all hover:scale-105 active:scale-95"
+                                className="w-full sm:w-auto flex items-center max-sm:gap-2 max-sm:text-sm justify-center gap-3 px-8 py-5 bg-white text-black font-bold rounded-2xl hover:bg-zinc-200 transition-all"
                             >
-
-                                Rejoindre la communauté
+                                <div>
+                                    <Image src="/github-dark.svg" color="white" alt="GitHub" width={18} height={18} className="object-contain" />
+                                </div>
+                                <span>Rejoindre la communauté</span>
                             </a>
 
                             <a
                                 href="https://wa.me/237690394365"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="w-full sm:w-auto  flex items-center max-sm:justify-start justify-center max-sm:gap-0 gap-3 px-8 py-5 bg-[#00c896]/10 border-2 border-[#00c896]/30 text-[#00c896] font-bold rounded-2xl hover:bg-[#00c896]/20 transition-all hover:scale-105 active:scale-95 group"
+                                className="w-full sm:w-auto max-sm:gap-2 max-sm:text-sm  flex items-center max-sm:justify-start justify-center max-sm:gap-0 gap-3 px-8 py-5 bg-[#00c896]/10 border-2 border-[#00c896]/30 text-[#00c896] font-bold rounded-2xl hover:bg-[#00c896]/20 transition-all group"
                             >
                                 <Phone className="w-5 h-5" />
                                 Contactez via WhatsApp

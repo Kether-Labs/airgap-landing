@@ -13,7 +13,7 @@ export const Hero = () => {
                 {/* Glow behind the mockup */}
                 <div className="absolute top-[40%] w-[800px] h-[500px] bg-[#00c896]/20 blur-[120px] rounded-full mix-blend-screen" />
                 {/* Glowing Arc/Ring */}
-                <div className="absolute top-[30%] w-[800px] h-[800px] rounded-full border border-[#00c896]/30 shadow-[0_0_80px_rgba(0,200,150,0.15)] [mask-image:linear-gradient(to_bottom,black,transparent_60%)]" />
+                <div className="absolute top-[30%] w-[900px] h-[900px] rounded-full border border-[#00c896]/30 shadow-[0_0_80px_rgba(0,200,150,0.15)] [mask-image:linear-gradient(to_bottom,black,transparent_60%)]" />
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col items-center text-center">

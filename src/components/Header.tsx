@@ -11,7 +11,7 @@ export const Header = () => {
     const navLinks = [
         { name: "Fonctionnalités", href: "#features" },
         { name: "Sécurité", href: "#security" },
-        { name: "Cas d'usage", href: "#use-cases" },
+        { name: "Téléchargements", href: "#download" },
         { name: "Contact", href: "#contact" },
     ];
 
@@ -47,7 +47,13 @@ export const Header = () => {
                         rel="noreferrer"
                         className="flex items-center gap-2 text-sm font-medium text-zinc-300 hover:text-white transition-colors px-4 py-2 rounded-full hover:bg-white/5"
                     >
-                        <span>GitHub</span>
+                        <div>
+                            <Image src="/github.svg" color="white" alt="GitHub" width={18} height={18} className="object-contain" />
+                        </div>
+                        <div>
+                            <span>GitHub</span>
+                        </div>
+
                     </a>
                     <a
                         href="#download"

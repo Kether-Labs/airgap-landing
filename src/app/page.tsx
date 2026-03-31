@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { Security } from "@/components/Security";
-import { UseCases } from "@/components/UseCases";
+import { DownloadSection } from "@/components/DownloadSection";
 import { Contact } from "@/components/Contact";
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
         <Hero />
         <Features />
         <Security />
+        <DownloadSection />
         <Contact />
       </main>
 
